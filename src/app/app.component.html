@@ -8,18 +8,20 @@
   </div>
 </div>
 <div class="menu">
+  &nbsp;|
+      <button mat-button routerLink="home" style="border:0px">Home </button>&nbsp;|
+      <button mat-button routerLink="contact" style="border:0px">Contact </button>&nbsp;|
+      <button mat-button routerLink="capabilities" style="border:0px">Capabilities </button>&nbsp;|
+      <a mat-button href="http://www.webtiers.com/wtsite/" target="_blank">Webtiers </a>&nbsp;|
+      <a mat-button href="http://www.linkedin.com/in/mfmatthews/" target="_blank">LinkedIn </a>&nbsp;|
+      <a mat-button href="../assets/mikematthews_profile_12052022.pdf" target="_blank">Download Mike's Profile</a>&nbsp;|
 
-      <button mat-button routerLink="home" style="border:0px">Home </button>
-      
-      <button mat-button routerLink="contact" style="border:0px">Contact </button>
-      <button mat-button routerLink="capabilities" style="border:0px">Capabilities </button>
-      <a mat-button href="https://www.google.com/" target="_blank">Webtiers </a>
-      <a mat-button href="https://www.google.com/" target="_blank">LinkedIn </a>
-<br/><br/><br/>
-  <router-outlet></router-outlet>
 </div>
 <div class="body_frame">
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-  <a mat-button href="assets/mikematthews_profile_12052022.pdf" target="_blank">Download Mike's Current Resume</a>
+  <br/><br/>
 
+  <router-outlet></router-outlet>
+  <br/><br/>
 </div>
+
+

@@ -2,8 +2,6 @@
 @use '@angular/material' as mat;
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 body {
 	background: #999C6A url(assets/images/background_tile.gif)  0 0 repeat-x;
 	text-align: center;
@@ -93,11 +91,21 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 	font-family : Verdana, Arial, Helvetica;
-	font-size : 12px;
+	font-size : 14px;
 	color : #999999;
 	text-align: left;
 }
 
+#body_frame
+{
+	width: 100%;
+	text-align: left;
+    vertical-align: top;
+	clear: both;
+	background-color: #FFFFFF;
+	/* background: url('Images/nav_image.jpg') repeat-y center; */
+	
+}
   
   A:active
 {
