@@ -9,17 +9,17 @@
 </div>
 
 <div class="menu">
-  &nbsp;|
-      <a mat-button routerLink="home">Home </a>&nbsp;|
-      <a mat-button routerLink="contact">Contact </a>&nbsp;|
-      <a mat-button routerLink="capabilities">Capabilities </a>&nbsp;|
-      <a mat-button href="http://www.webtiers.com/wtsite/" target="_blank">Webtiers </a>&nbsp;|
-      <a mat-button href="http://www.linkedin.com/in/mfmatthews/" target="_blank">LinkedIn </a>&nbsp;|
-      <a mat-button href="../assets/MichaelMatthewsResume-062024.pdf" target="_blank">Profile</a>&nbsp;|
-
+  <button class="hamburger" (click)="toggleMenu()">&#9776;</button>
+  <div class="nav-links" [class.open]="menuOpen">
+    <a mat-button routerLink="home" (click)="closeMenu()">Home</a>
+    <a mat-button routerLink="contact" (click)="closeMenu()">Contact</a>
+    <a mat-button routerLink="capabilities" (click)="closeMenu()">Capabilities</a>
+    <a mat-button href="http://www.webtiers.com/wtsite/" target="_blank" (click)="closeMenu()">Webtiers</a>
+    <a mat-button href="http://www.linkedin.com/in/mfmatthews/" target="_blank" (click)="closeMenu()">LinkedIn</a>
+  </div>
 </div>
 <div class="body_frame">
-  <br/><br/>
+  <br/>
 
   <router-outlet></router-outlet>
   <br/><br/>
